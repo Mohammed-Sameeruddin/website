@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/home.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+/*======================= HOME ================================ */
+header {
+    color: white;
+}
+
+h2 {
+    margin-left: 20px;
+    font-size: 30px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+h2:hover {
+    color:aquamarine;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+li{
+    list-style: none;
+    border: 2px solid aquamarine;
+    padding: 15px 25px;
+    margin: 0 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+li:hover {
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.intro {
+    border: 5px solid aquamarine;
+    border-radius: 5px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+    line-height: 25px;
+    width:75%;
+    margin-top: 150px;
+    color: white;
+}
+
+.intro h3 {
+    font-size: 32px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.intro h3:hover {
+    color: aquamarine;
+}
+
+.intro > p {
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 22px;
+}
+
+span {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#btn{
+    padding: 10px 30px;
+    margin: 10px 10px;
+    border: 2px solid aquamarine;
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: fixed;
+    bottom:0px;
+}
+
+
+/*======================= About ================================ */
+#about {
+    margin-top: 30px;
+    text-align: center;
+    color: aquamarine;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.about-me img {
+    width: 500px;
+    height: 500px;
+    margin-left: 150px;
+}
+
+.details {
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    padding-right: 80px;
+    margin-left: 60px;
+    font-size: 25px;
+    margin-right: 100px;
+    /* border: 2px solid aquamarine; */
+    text-align: justify;
+}
+
+strong {
+    color: aquamarine;
+}
+
+/*======================= Gallery ================================ */
+
+#gallery-head {
+    margin-top: 30px;
+    text-align: center;
+    color: aquamarine;
+}
+
+img {
+    width: 40vh;
+    height: 250px;
+    margin: 20px;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+}
+
+img:hover {
+    opacity: 0.7;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    position: relative;
+}
+
+
+
+/*======================= Contact ================================ */
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    margin: 20px;
+    padding: 20px 10px;
+    width: 30vw;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid aquamarine;
+}
+
+textarea {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30vw;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid aquamarine;
+}
+
+#submit {
+    margin-top: 20px;
+    width: 15vw;
+    background-color: transparent;
+    color: white;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+#contact {
+    margin-top: 30px;
+    text-align: center;
+    color: aquamarine;
+}
