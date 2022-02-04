@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     background-image: url("images/home.jpeg");
-    background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
 
@@ -33,13 +32,15 @@ nav {
     padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 li{
@@ -84,6 +85,13 @@ a {
     font-size: 32px;
     font-weight: bolder;
     margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#name {
+    color: aquamarine;
+    font-size: 32px;
+    font-weight: bolder;
 }
 
 .intro h3:hover {
@@ -96,6 +104,11 @@ a {
 
 .intro p {
     font-size: 22px;
+}
+
+.intro > span {
+    font-size: 25px;
+    font-style: italic;
 }
 
 span {
@@ -129,6 +142,9 @@ footer{
     letter-spacing: 2px;
     position: fixed;
     bottom:0px;
+    margin-top: 20px;
+    /* z-index: -1; */
+    /* background-color: aquamarine; */
 }
 
 
@@ -145,22 +161,20 @@ footer{
     justify-content: center;
     margin-top: 50px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about-me img {
-    width: 500px;
-    height: 500px;
-    margin-left: 150px;
+    width: 400px;
+    height: 400px;
 }
 
 .details {
     color: white;
     margin: 20px;
+    width: 50vw;
     padding: 20px;
-    padding-right: 80px;
-    margin-left: 60px;
     font-size: 25px;
-    margin-right: 100px;
     /* border: 2px solid aquamarine; */
     text-align: justify;
 }
@@ -196,6 +210,7 @@ img:hover {
     justify-content: space-around;
     align-content: space-around;
     position: relative;
+    margin-bottom: 40px;
 }
 
 
@@ -247,4 +262,118 @@ textarea {
     margin-top: 30px;
     text-align: center;
     color: aquamarine;
+}
+
+
+/*======================= Responsiveness code ================================ */
+
+@media only screen and (max-width: 1026px){
+    input, textarea {
+        width: 50vw;
+    }
+    #submit {
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .details {
+        text-align:center;
+        margin-bottom: 50px;
+        width: 70vw;
+    }
+    input, textarea {
+        width: 70vw;
+    }
+}
+
+/* @media only screen and (max-width: 790px){
+    .details {
+        text-align:center;
+        margin-bottom: 50px;
+        width: 70vw;
+
+    }
+} */
+
+@media only screen and (max-width: 680px){
+    nav {
+        flex-direction: column;
+    }
+    h2 {
+        margin-bottom: 10px;
+    }
+    .intro {
+        margin-top: 60px;
+    }
+    .details{
+        width: 80vw;
+    }
+    .about-me {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    nav {
+        flex-wrap: nowrap;
+    }
+    ul{
+        justify-content: center;
+        align-content: space-around;
+    }
+    li {
+        padding: 15px 10px;
+        margin: 5px 5px;
+    }
+    .intro {
+        margin-top: 40px;
+    }
+    .details{
+        width: 90vw;
+    }
+    .about-me img {
+        width: 80vw;
+    }
+    input, textarea {
+        width: 90vw;
+    }
+    #submit {
+        width: 50vw;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .intro{
+        width: 90vw;
+    }
+    .about-me img {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    li {
+        padding: 10px 5px;
+        margin: 5px 2px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    li {
+        padding: 10px 3px;
+        margin: 4px 0px;
+    }
+    img {
+        width: 90vw;
+    }
+    footer {
+        padding-bottom: 12px;
+    }
+    #contact {
+        font-size: 25px;
+    }
+
 }
